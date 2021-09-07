@@ -1,0 +1,47 @@
+.footer-logo {
+    border: 1px solid $white-color;
+    display: inline-block;
+    border-radius: 30px;
+    text-align: center;
+    height: 77px;
+    width: 50px;
+    color: $white-color;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1;
+    width: 50px;
+    padding-top: 7px;
+    position: absolute;
+    left: -38%;
+    z-index: 1;
+    animation: floating-y infinite 5s alternate-reverse;
+}
+
+.fancy-social {
+    a {
+        display: inline-block;
+        margin-right: 13px;
+        @include transition(.3s);
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+} 
+
+@-webkit-keyframes floating-y {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+@keyframes floating-y {
+    0% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+

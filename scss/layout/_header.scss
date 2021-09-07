@@ -1,0 +1,21 @@
+//main-header
+.main-header {
+    border-bottom: 1px solid $heding;
+    background-color: $white-color;
+}
+.header-top-bg {
+    background-color: $heding;
+    height: 20px;
+    width: 100%;
+}
+.logo-text {
+    color: $heding;
+    font-size: 29px;
+    text-transform: uppercase;
+}
+
+.header-btn-group {
+    .que_btn {
+        margin-left: 5px;
+    }
+}

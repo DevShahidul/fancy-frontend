@@ -1,0 +1,125 @@
+.center-btn {
+     position: absolute;
+     left: 0;
+     right: 0;
+     text-align: center;
+     margin: 0 auto;
+     top: 50%;
+     transform: translateY(-50%);
+     z-index: 1;
+}
+.item-wrapper {
+    &:hover {
+        img {
+            filter: grayscale(.7);
+        }
+    }
+}
+
+.category-link-text {
+    p {
+        font-size: 48px;
+        font-family: $messap;
+        img {
+            transform: translateY(-11px);
+        }
+    }
+    .styled-text {
+        font-family: $oggi;
+        position: relative;
+        z-index: 1;
+        &::before {
+            content: '';
+            position: absolute;
+            background-image: url(../img/line-1.svg) no-repeat;
+            width: 100%;
+            height: 5px;
+            left: 0;
+            top: 100%;
+            z-index: 1;
+        }
+    }
+} 
+
+.filter-wrapper {
+    width: 100%;
+    border: 1px solid $border-color;
+    height: 39px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    .form-one {
+        position: relative;
+        z-index: 1;
+        width: 100%;
+        input {
+            width: 100%;
+            border: 0;
+            border-right: 1px solid $border-color;
+            border-radius: 0;
+            padding-left: 49px;
+        }
+        .sub_btn {
+            position: absolute;
+            left: 17px;
+            top: 5;
+            z-index: 1;
+        }
+    }
+}
+
+.select-item {
+     select {
+         background-color: transparent;
+         border: 0;
+         padding: 0;
+         width: 117px;
+         text-align: center;
+         padding-left: 33px;
+         line-height: 33px;
+         appearance: none;
+         position: relative;
+         z-index: 1;
+         &:focus-visible {
+             outline: none;
+         }
+         &::before {
+             content: '';
+             position: absolute;
+             background-image: url(../img/icon/chevron-down.svg) no-repeat;
+             width: 10px;
+             height: 10px;
+             right: 20px;
+             top: 50%;
+             transform: translateY(-50%);
+             z-index: 1;
+         }
+     }
+}
+
+.filter-item {
+    .item-title,
+    .item-text {
+        color: $heding;
+        font-size: 12px;
+        font-family: $gt_regular;
+        font-weight: 400;
+        line-height: 1.1;
+        display: block;
+        margin-bottom: 3px;
+    }
+}
+
+.category-item-details {
+    .select-item {
+        select {
+            display: inline-block;
+            border: 1px solid #333;
+            border-radius: 40px;
+            padding: 0;
+            width: 120px;
+            height: 39px;
+            padding-left: 27px;
+        }
+    } 
+}

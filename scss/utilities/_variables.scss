@@ -1,0 +1,49 @@
+// Font Family
+$ellograph: "Ellograph CF Extra";
+$oggi: "Ogg";
+$gt_america: "GT America Trial Exp Md";
+$gt_regular: "GT America";
+$messap: "Messapia";
+$roboto_monolight: "Roboto Mono";
+$myriad: "Myriad Pro";
+
+// Colors ---------------
+$white-color: #ffffff;
+$black-color: #000;
+$orange-color:#fa8549;
+$red-color: #FF3F41;
+$yellow-color:#FFD36F;
+$grey-color:#f8f2f0;
+
+$theme-color: #FF3E41;
+
+$body-color: #333333;
+
+$border-color: #D9E3E5;
+
+
+
+// Heading Color
+$heding: #333333;
+
+
+//bg-class
+$bgcolorMap : ();
+$bgcolorMap : map-merge(("theme" : $theme-color), $bgcolorMap);
+
+
+//text-color-class
+
+$textcolorMap : ();
+$textcolorMap : map-merge(("theme" : $theme-color,
+        "body" : $body-color,
+        "heding": $heding), $textcolorMap);
+
+// Responsive Variables
+$xxl: 'only screen and (min-width: 1601px) and (max-width: 1900px)';
+$xl: 'only screen and (min-width: 1601px) and (max-width: 1800px)';
+$laptop: 'only screen and (min-width: 1200px) and (max-width: 1600px)';
+$lg : 'only screen and (min-width: 992px) and (max-width: 1200px)';
+$md:'only screen and (min-width: 768px) and (max-width: 991px)';
+$xs:'(max-width: 767px)';
+$sm: 'only screen and (min-width: 576px) and (max-width: 767px)';

@@ -1,0 +1,57 @@
+
+.item-wrapper {
+    position: relative;
+    z-index: 1;
+    .brand-tag {
+        color: $white-color;
+        font-size: 14px;
+        line-height: 1;
+        position: absolute;
+        writing-mode: vertical-lr;
+        display: inline-block;
+        left: 29px;
+        bottom: 18px;
+        z-index: 1;
+    }
+}
+
+.wallet-content-area {
+    background: #fbf9f6;
+    box-shadow: 1.5px 1.5px 8px rgba(0, 0, 0, 0.1);
+    max-width: 412px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    position: relative;
+    display: none;
+    z-index: 1;
+    margin: 0 auto;
+   .close-btn {
+        border: 0;
+        background: transparent;
+        position: absolute;
+        right: 31px;
+        top: 31px;
+        z-index: 1;
+    }
+}
+.modals-header {
+    .modals-title {
+        font-size: 12px;
+    }
+     p {
+         font-family: $gt_america;
+     }
+} 
+
+
+.wallet-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    p {
+        font-family: $gt_america;
+        margin-left: 10px;
+    }
+}
+
+

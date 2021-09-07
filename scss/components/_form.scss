@@ -1,0 +1,30 @@
+ input {
+    background: transparent;
+    border: 1px solid $white-color;
+    border-radius: 40px;
+    height: 39px;
+    width: 100%;
+    color: $white-color !important;
+    font-size: 14px;
+    padding-left: 18px;
+}
+
+.widget-form {
+    .form-one {
+        position: relative;
+        z-index: 1;
+        input {
+            color: $white-color;
+            font-family: $ellograph;
+            &::placeholder {
+                color: $white-color;
+            }
+            &::-moz-placeholder {
+                color: $white-color;
+            }
+            &::-o-placeholder {
+                color: $white-color;
+            }
+        }
+    }
+}

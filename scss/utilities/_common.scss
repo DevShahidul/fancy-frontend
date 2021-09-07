@@ -1,0 +1,568 @@
+/*----------------------------------------*/
+/*  01. Theme default CSS
+/*----------------------------------------*/
+
+
+//custom-fonts
+@font-face {
+	font-family: 'Ellograph CF Extra';
+	src: url('../fonts/EllographCF-ExtraLight.eot');
+	src: url('../fonts/EllographCF-ExtraLight.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/EllographCF-ExtraLight.woff2') format('woff2'),
+		url('../fonts/EllographCF-ExtraLight.woff') format('woff'),
+		url('../fonts/EllographCF-ExtraLight.ttf') format('truetype');
+	font-weight: 200;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Ogg';
+	src: url('../fonts/Ogg-Italic.eot');
+	src: url('../fonts/Ogg-Italic.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Ogg-Italic.woff2') format('woff2'),
+		url('../fonts/Ogg-Italic.woff') format('woff'),
+		url('../fonts/Ogg-Italic.ttf') format('truetype');
+	font-weight: normal;
+	font-style: italic;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'GT America Trial Exp Md';
+	src: url('../fonts/GTAmericaTrial-ExpMd.eot');
+	src: url('../fonts/GTAmericaTrial-ExpMd.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GTAmericaTrial-ExpMd.woff2') format('woff2'),
+		url('../fonts/GTAmericaTrial-ExpMd.woff') format('woff'),
+		url('../fonts/GTAmericaTrial-ExpMd.ttf') format('truetype');
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Messapia';
+	src: url('../fonts/Messapia-Regular.eot');
+	src: url('../fonts/Messapia-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Messapia-Regular.woff2') format('woff2'),
+		url('../fonts/Messapia-Regular.woff') format('woff'),
+		url('../fonts/Messapia-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Roboto Mono';
+	src: url('../fonts/RobotoMono-Light.eot');
+	src: url('../fonts/RobotoMono-Light.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/RobotoMono-Light.woff2') format('woff2'),
+		url('../fonts/RobotoMono-Light.woff') format('woff'),
+		url('../fonts/RobotoMono-Light.ttf') format('truetype');
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'Myriad Pro';
+	src: url('../fonts/MyriadPro-Regular.eot');
+	src: url('../fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/MyriadPro-Regular.woff2') format('woff2'),
+		url('../fonts/MyriadPro-Regular.woff') format('woff'),
+		url('../fonts/MyriadPro-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'GT America';
+	src: url('../fonts/GTAmerica-Regular.eot');
+	src: url('../fonts/GTAmerica-Regular.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GTAmerica-Regular.woff2') format('woff2'),
+		url('../fonts/GTAmerica-Regular.woff') format('woff'),
+		url('../fonts/GTAmerica-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: 'GT America';
+	src: url('../fonts/GTAmerica-Regular_1.eot');
+	src: url('../fonts/GTAmerica-Regular_1.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/GTAmerica-Regular_1.woff2') format('woff2'),
+		url('../fonts/GTAmerica-Regular_1.woff') format('woff'),
+		url('../fonts/GTAmerica-Regular_1.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+	font-display: swap;
+}
+
+
+
+/* 1. Theme default css */
+
+
+
+
+body {
+	font-family: $ellograph;
+	font-size: 16px;
+	line-height: 28px;
+	font-weight: 400;
+	font-style: normal;
+	color: $body-color;
+}
+
+// .img,img {
+// 	max-width: 100%;
+// 	@include transition(.3s);
+// }
+.f-left {
+	float: left
+}
+
+.f-right {
+	float: right
+}
+
+.fix {
+	overflow: hidden
+}
+
+a,
+.button {
+	@include transition(.3s);
+}
+
+a {
+	text-decoration: none;
+}
+
+a:focus,
+.button:focus {
+	text-decoration: none;
+	outline: none;
+}
+
+a:focus,
+a:hover {
+	color: blue;
+	text-decoration: none;
+}
+
+a,
+button {
+	color: inherit;
+	outline: medium none;
+}
+
+button:focus,
+input:focus,
+input:focus,
+textarea,
+textarea:focus {
+	outline: 0
+}
+
+.uppercase {
+	text-transform: uppercase;
+}
+
+.capitalize {
+	text-transform: capitalize;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $gt_america;
+	color: $heding;
+	line-height: 1.1;
+	margin-top: 0px;
+	font-style: normal;
+	font-weight: 500;
+	text-transform: normal;
+}
+
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a,
+h6 a {
+	color: inherit;
+}
+
+h1,
+.h1 {
+	font-size: 40px;
+}
+
+h2,
+.h2 {
+	font-size: 36px;
+
+}
+
+h3,
+.h3 {
+	font-size: 28px;
+}
+
+h4,
+.h4 {
+	font-size: 22px;
+	font-weight: 700;
+}
+
+h5,
+.h5 {
+	font-size: 18px;
+}
+
+h6,
+.h6 {
+	font-size: 16px;
+}
+
+.list-style-none {
+	margin: 0px;
+	padding: 0px;
+
+	li {
+		list-style-type: none;
+
+		a {
+			list-style-type: none;
+		}
+	}
+}
+
+
+p {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 19px;
+	font-family: $ellograph;
+	color: $body-color;
+	margin-bottom: 0;
+}
+
+hr {
+	border-bottom: 1px solid $border-color;
+	border-top: 0 none;
+	margin: 30px 0;
+	padding: 0;
+}
+
+label {
+	cursor: pointer;
+	font-size: 14px;
+	font-weight: 400;
+}
+
+*::-moz-selection {
+	background: $black-color;
+	color: $white-color;
+	text-shadow: none;
+}
+
+::-moz-selection {
+	background: $black-color;
+	color: $white-color;
+	text-shadow: none;
+}
+
+::selection {
+	background: $black-color;
+	color: $white-color;
+	text-shadow: none;
+}
+
+//before-none
+.before-none {
+	&::before {
+		display: none;
+	}
+}
+
+.after-none {
+	&::after {
+		display: none;
+	}
+}
+
+/*--
+    - Input Placeholder
+-----------------------------------------*/
+*::-moz-placeholder {
+	color: $black-color;
+	font-size: 14px;
+	opacity: 1;
+}
+
+*::placeholder {
+	color: $black-color;
+	font-size: 14px;
+	opacity: 1;
+}
+
+
+/*--
+    - position Classes
+-----------------------------------------*/
+.pos-rel {
+	position: relative;
+}
+
+.pos-abl {
+	position: absolute;
+}
+
+/*--
+    - Common Classes
+-----------------------------------------*/
+.fix {
+	overflow: hidden
+}
+
+.clear {
+	clear: both;
+}
+
+
+/*--
+    - Background color
+-----------------------------------------*/
+
+.grey-bg {
+	background: $grey-color;
+}
+
+.white-bg {
+	background: $white-color;
+}
+
+.black-bg {
+	background: $black-color;
+}
+
+.heding-bg {
+	background: $heding;
+}
+
+.theme-bg {
+	background: $theme-color;
+}
+
+.primary-bg {
+	background: #222;
+}
+
+/*--
+    - color
+-----------------------------------------*/
+.white-color {
+	color: $white-color;
+}
+
+.black-color {
+	color: $black-color;
+}
+
+.theme-color {
+	color: $theme-color;
+}
+
+
+.primary-color {
+	color: #222;
+}
+
+
+
+
+
+//video-icon
+.popup-video {
+	color: $white-color;
+	background: $theme-color;
+	border-radius: 50%;
+	line-height: 65px;
+	display: inline-block;
+	width: 65px;
+	height: 65px;
+	text-align: center;
+	-webkit-transition: all 0.4s ease-out 0s;
+	-moz-transition: all 0.4s ease-out 0s;
+	-ms-transition: all 0.4s ease-out 0s;
+	-o-transition: all 0.4s ease-out 0s;
+	transition: all 0.4s ease-out 0s;
+	position: relative;
+	z-index: 1;
+	animation: pulseBig infinite 5s linear;
+
+	&:hover {
+		color: $white-color;
+		background: $theme-color;
+	}
+}
+
+/*--
+    - Margin & Padding
+-----------------------------------------*/
+/*-- Margin Top --*/
+@for $i from 1 through 80 {
+	.mt-#{5 * $i} {
+		margin-top: 5px * $i;
+	}
+}
+
+// /*-- Margin Bottom --*/
+@for $i from 1 through 80 {
+	.mb-#{5 * $i} {
+		margin-bottom: 5px *$i;
+	}
+}
+
+// /*-- Margin Left --*/
+@for $i from 1 through 80 {
+	.ml-#{5 * $i} {
+		margin-left: 5px * $i;
+	}
+}
+
+// /*-- Margin Right --*/
+@for $i from 1 through 80 {
+	.mr-#{5 * $i} {
+		margin-right: 5px *$i;
+	}
+}
+
+// /*-- Padding Top --*/
+@for $i from 1 through 80 {
+	.pt-#{5 * $i} {
+		padding-top: 5px *$i;
+	}
+}
+
+// /*-- Padding Bottom --*/
+@for $i from 1 through 80 {
+	.pb-#{5 * $i} {
+		padding-bottom: 5px *$i;
+	}
+}
+
+// /*-- Padding Left --*/
+@for $i from 1 through 80 {
+	.pl-#{5 * $i} {
+		padding-left: 5px *$i;
+	}
+}
+
+// /*-- Padding Right --*/
+@for $i from 1 through 80 {
+	.pr-#{5 * $i} {
+		padding-right: 5px *$i;
+	}
+}
+
+
+// others common css here :)
+
+.dark #preloader {
+	background-color: #232323;
+}
+
+#preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #f7f7f7;
+	z-index: 999999;
+}
+
+.preloader {
+	width: 50px;
+	height: 50px;
+	display: inline-block;
+	padding: 0px;
+	text-align: left;
+	box-sizing: border-box;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-left: -25px;
+	margin-top: -25px;
+}
+
+.preloader span {
+	position: absolute;
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background: $theme-color;
+	-webkit-animation: preloader 1.3s linear infinite;
+	animation: preloader 1.3s linear infinite;
+}
+
+.preloader span:last-child {
+	animation-delay: -0.8s;
+	-webkit-animation-delay: -0.8s;
+}
+
+@keyframes preloader {
+	0% {
+		transform: scale(0, 0);
+		opacity: 0.5;
+	}
+
+	100% {
+		transform: scale(1, 1);
+		opacity: 0;
+	}
+}
+
+@-webkit-keyframes preloader {
+	0% {
+		-webkit-transform: scale(0, 0);
+		opacity: 0.5;
+	}
+
+	100% {
+		-webkit-transform: scale(1, 1);
+		opacity: 0;
+	}
+}
+
+//scrollup
+.scrollUp {
+	color: $white-color;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border-radius: 50%;
+	background-color: $theme-color;
+	text-align: center;
+	line-height: 60px;
+	font-size: 20px;
+	position: fixed;
+	right: 50px;
+	z-index: 1111;
+	bottom: 50px;
+
+	& i {
+		color: $white-color;
+	}
+}
+
+//animation

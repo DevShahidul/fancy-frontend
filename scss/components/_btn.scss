@@ -1,0 +1,85 @@
+/*--
+	-theme-btn
+----------------------------------------*/
+.theme_btn {
+    overflow: hidden;
+    border: 1px solid $heding;
+    border-radius: 40px;
+    background-color: transparent;
+    color: $heding;
+    font-size: 14px;
+    line-height: 1;
+    padding: 12px 41px 12px 41px;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    &::before {
+        content: '';
+        position: absolute;
+        width: 0;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        @include transition(.3s);
+    }
+    &:hover {
+        color: $white-color;
+        &::before {
+            width: 100%;
+            background-color: $heding;
+        }
+    }
+   &.style-1 {
+        color: $white-color;
+        padding: 12px 45px;
+        border-color: $white-color;
+        &:hover {
+            color: $heding;
+           &::before {
+                background-color: $white-color;
+           }
+        }
+    }
+}
+
+
+
+.que_btn {
+    border-radius: 29.5px;
+    padding: 12px 20px;
+    &:hover {
+        img {
+            filter: brightness(1) invert(1);
+        }
+        &::before {
+            width: 100%;
+            background-color: $heding;
+        }
+    }
+    
+}
+
+.sub_btn {
+    border: 0;
+    padding: 0;
+    background: transparent;
+    position: absolute;
+    right: 17px;
+    top: 46%;
+    transform: translateY(-53%);
+}
+
+.shop-now {
+    a {
+        color: $heding;
+        font-size: 10px;
+        font-family: $gt_america;
+        display: block;
+        &:hover {
+            color: $black-color;
+        }
+    }
+}
