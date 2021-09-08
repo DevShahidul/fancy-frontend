@@ -51,6 +51,11 @@
 }
 
 @mixin mq($value) {
+	@if $value=='laptop2' {
+		@media (max-width: 1400px) {
+			@content;
+		}
+	}
 	@if $value=='xxl' {
 		@media (min-width: 1601px) and (max-width: 1900px) {
 			@content;
@@ -111,3 +116,5 @@
 		@content;
 	}
 }
+
+

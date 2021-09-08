@@ -28,3 +28,90 @@
         }
     }
 }
+
+//form-two
+.contact-form {
+    max-width: 889.33px;
+    background: #fbf9f6;
+    box-shadow: 1.5px 1.5px 8px rgba(0, 0, 0, 0.1);
+    padding: 60px 45px 50px 45px;
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+    @include mq (xs) {
+       padding: 60px 15px 50px 15px;
+    }
+    .close-btn {
+        border: 0;
+        background-color: transparent;
+        padding: 0;
+        position: absolute;
+        right: 30px;
+        top: 30px;
+        z-index: 2;
+    }
+}
+.form-two {
+     label {
+         color: $heding;
+         font-size: 12px;
+         font-family: $gt_regular;
+         width: 15%;
+         @include mq (xs) {
+            width: 100%;
+            line-height: 44px;
+         }
+         @include mq (sm) {
+            width: 22%;
+            line-height: 44px;
+         }
+     }
+     input {
+         color: $grey-color !important;
+         font-size: 14px;
+         text-align: center;
+         border: 0 !important;
+         width: 90%;
+         padding-left: 0;
+         @include mq (xs) {
+             width: 100%;
+             text-align: left;
+         }
+
+         @include mq (sm) {
+             width: 78%;
+             text-align: center;
+         }
+     }
+     .form-group {
+         border: 1px solid $heding;
+         border-right: 0;
+         border-left: 0;
+         border-top: 0;
+         padding: 5px 0 7px 0;
+         display: flex;
+         @include mq (xs) {
+           display: block;
+         }
+
+         @include mq (sm) {
+             display: flex;
+         }
+     }
+}
+.form-title {
+    color: $heding;
+    font-size: 12px;
+    font-family: $gt_regular;
+    text-align: center;
+    border-bottom: 1px solid $heding;
+    padding-bottom: 35px;
+}
+
+.sect-title {
+    color: $heding;
+    font-size: 12px;
+    font-weight: 400;
+    font-family: $gt_regular;
+}
+

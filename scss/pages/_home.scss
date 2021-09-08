@@ -2,6 +2,12 @@
 .item-wrapper {
     position: relative;
     z-index: 1;
+    img {
+        @include mq(xs) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+    }
     .brand-tag {
         color: $white-color;
         font-size: 14px;
@@ -12,6 +18,22 @@
         left: 29px;
         bottom: 18px;
         z-index: 1;
+        @include mq(xs) {
+            left: 30px;
+            bottom: 60px;
+        }
+    }
+    .brand-tag-1 {
+        left: 30%;
+        @include mq(lg) {
+            left: 30px;
+        }
+        @include mq(md) {
+            left: 30px;
+        }
+        @include mq(xs) {
+            left: 30px;
+        }
     }
 }
 
@@ -22,7 +44,6 @@
     padding-top: 60px;
     padding-bottom: 60px;
     position: relative;
-    display: none;
     z-index: 1;
     margin: 0 auto;
    .close-btn {

@@ -12,6 +12,12 @@
     color: $heding;
     font-size: 29px;
     text-transform: uppercase;
+    @include mq(xs) {
+        margin-bottom: 15px;
+    }
+    @include mq(sm) {
+        margin-bottom: 0;
+    }
 }
 
 .header-btn-group {

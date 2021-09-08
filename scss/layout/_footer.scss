@@ -15,6 +15,22 @@
     left: -38%;
     z-index: 1;
     animation: floating-y infinite 5s alternate-reverse;
+
+    @include mq (laptop2) {
+            display: inline-block;
+            border-radius: 40px;
+            height: 40px;
+            width: 31%;
+            position: relative;
+            left: 0;
+            animation: unset;
+            line-height: 22px;
+            margin-bottom: 20px;
+
+        span {
+            display: inline !important;
+        }
+    }
 }
 
 .fancy-social {
