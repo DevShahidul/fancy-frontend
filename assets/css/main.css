@@ -3332,6 +3332,12 @@ input {
   }
 }
 
+@media (max-width: 767px) {
+  .footer-logo {
+    width: 42%;
+  }
+}
+
 .fancy-social a {
   display: inline-block;
   margin-right: 13px;
@@ -3625,6 +3631,7 @@ input {
   appearance: none;
   position: relative;
   z-index: 4;
+  padding-left: 15px;
 }
 
 .select-item select:focus-visible {
