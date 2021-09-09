@@ -2,7 +2,12 @@
 .item-wrapper {
     position: relative;
     z-index: 1;
-    border: 1px solid #333333;
+    display: block;
+    &>div{
+        border: 1px solid #333333;
+        display: block;
+        max-width: 533px;
+    }
     img {
         @include mq(xs) {
             width: 100%;
@@ -77,3 +82,21 @@
 }
 
 
+.tween-items{
+    .item-wrapper{
+        &:last-child{
+            &>div{
+                max-width: 500px;
+                margin-left: auto;
+            }
+        }
+    }
+}
+
+.one-item{
+ .item-wrapper{
+     &>div{
+         max-width: 472px;
+     }
+ }   
+}
