@@ -4,11 +4,14 @@
     z-index: 1;
     display: block;
     &>div{
-        border: 1px solid #333333;
-        display: block;
-        max-width: 533px;
+        &:not(.center-btn){
+            border: 1px solid #333333;
+            display: block;
+            max-width: 533px;
+        }
     }
     img {
+        width: 100%;
         @include mq(xs) {
             width: 100%;
             margin-bottom: 30px;
