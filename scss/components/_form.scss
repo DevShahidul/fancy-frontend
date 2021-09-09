@@ -36,6 +36,8 @@
     box-shadow: 1.5px 1.5px 8px rgba(0, 0, 0, 0.1);
     padding: 60px 45px 50px 45px;
     margin: 0 auto;
+    margin-top: 90px;
+    margin-bottom: 70px;
     position: relative;
     z-index: 1;
     @include mq (xs) {
@@ -57,6 +59,7 @@
          font-size: 12px;
          font-family: $gt_regular;
          width: 15%;
+         color: #000000;
          @include mq (xs) {
             width: 100%;
             line-height: 44px;
